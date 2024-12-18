@@ -56,6 +56,7 @@ interface TooltipBaseProps extends VibeComponentProps {
    * how much delay should the Dialog wait until it should trigger the show in MS
    */
   showDelay?: number;
+  childId?: string;
   disableDialogSlide?: boolean;
   animationType?: DialogAnimationType;
   withoutDialog?: boolean;
@@ -178,7 +179,7 @@ export default class Tooltip extends PureComponent<TooltipProps> {
   }
 
   renderTooltipContent() {
-    const { theme, content, className, style, maxWidth, title, image, icon } = this.props;
+    const { theme, content, className, style, maxWidth, title, image, icon, id, childId } = this.props;
     if (!content) {
       // don't render empty tooltip
       return null;
@@ -205,7 +206,7 @@ export default class Tooltip extends PureComponent<TooltipProps> {
         className={cx(styles.tooltip, getStyle(styles, camelCase(theme)), className)}
       >
         {image && <img className={styles.image} src={image} alt="" />}
-        <div className={cx(styles.content)}>
+        <div id={id || `${childId}-tooltip`} className={cx(styles.content)}>
           {title && (
             <Flex gap="xs">
               {icon && <Icon iconSize="20" icon={icon} />}

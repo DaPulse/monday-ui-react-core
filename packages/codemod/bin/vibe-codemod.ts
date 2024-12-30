@@ -251,8 +251,7 @@ async function main() {
         ]
       : [];
   const orderedTransformationFiles = [
-    ...transformationFiles.filter(file => !filesToProcessLast.includes(file)),
-    ...filesToProcessLast
+    ...transformationFiles.filter(file => file.includes("Label") || file.includes("Renaming"))
   ];
 
   await processTransformations(orderedTransformationFiles);

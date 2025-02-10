@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.25.0](https://github.com/mondaycom/vibe/compare/@vibe/core@3.24.2...@vibe/core@3.25.0) (2025-02-09)
+
+
+### Features
+
+* **ModalFooter:** allow tooltip for the modal footer's buttons ([#2754](https://github.com/mondaycom/vibe/issues/2754)) ([9f45266](https://github.com/mondaycom/vibe/commit/9f45266a9a46ab8e0b0f36fb3bdeca969495f742))
+
+
+
+
+
+## [3.24.2](https://github.com/mondaycom/vibe/compare/@vibe/core@3.24.1...@vibe/core@3.24.2) (2025-02-09)
+
+
+### Bug Fixes
+
+* **Combobox:** color on sticky category in virtualized ([#2757](https://github.com/mondaycom/vibe/issues/2757)) ([91a3bd9](https://github.com/mondaycom/vibe/commit/91a3bd9b5f4c950b4acc9f32a0e65b0080fe7e4e))
+
+
+
+
+
 ## [3.24.1](https://github.com/mondaycom/vibe/compare/@vibe/core@3.24.0...@vibe/core@3.24.1) (2025-02-05)
 
 **Note:** Version bump only for package @vibe/core

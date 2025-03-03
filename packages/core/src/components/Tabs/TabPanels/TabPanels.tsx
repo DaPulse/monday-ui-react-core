@@ -51,6 +51,7 @@ const TabPanels: FC<TabPanelsProps> & {
         className={cx(styles.tabPanelsWrapper, className)}
         id={id}
         data-testid={dataTestId || getTestId(ComponentDefaultTestId.TAB_PANELS, id)}
+        data-vibe={ComponentDefaultTestId.TAB_PANELS}
       >
         {renderedTabs}
       </div>
